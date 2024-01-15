@@ -3,7 +3,6 @@ len=[]
 for _ in range (K):
     len.append(int(input()))
 
-len.sort()   
 start=1
 end=max(len)
 
