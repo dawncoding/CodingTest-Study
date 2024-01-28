@@ -24,36 +24,6 @@ for i in m_list:
 
 알고리즘
 이분 탐색
-* n_list를 정렬해두는 게 중요하다고 한다.
-import sys
-input = sys.stdin.readline
-
-n = int(input())
-n_list = list(map(int, input().split()))
-m = int(input())
-m_list = list(map(int, input().split()))
-n_list.sort() # O(NlogN)
-
-# m_list의 각 원소별로 이분탐색
-for m in m_list:
-  left = 0
-  right = n-1
-
-  while left <= right:
-    mid = (left + right) // 2
-    if m > n_list[mid]:
-      left = mid + 1
-    elif m < n_list[mid]:
-      right = mid - 1
-    else:
-      left = mid
-      right = mid
-      break
-  
-  if left == mid and right == mid:
-    print(1)
-  else:
-    print(0)
 
 시간 복잡도 -> O(NlogN) + O(MllogN) -> O(NlogN)
 n_list 정렬 -> O(NlogN) (N: n_list의 길이)
