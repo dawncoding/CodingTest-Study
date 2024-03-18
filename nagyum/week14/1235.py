@@ -4,7 +4,7 @@
 student배열에 숫자 입력 받고 
 diff 배열에 따로 하나씩 입력 받으면서 같으면 아웃 아니면 계속 적립해서 
 diff 배열의 길이를 받으면 되는거 아님...?
-student는 문잔디 바보처럼 int 해놈 ,,
+student는 문잔디 바보처럼 int 해놈 
 """
 
 N=int(input()) 
