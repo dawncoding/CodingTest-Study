@@ -1,7 +1,8 @@
 import sys
+input=sys.stdin.readline
 
-string_a = ' ' + sys.stdin.readline().rstrip()
-string_b = ' ' + sys.stdin.readline().rstrip()
+string_a = ' ' + input().rstrip()
+string_b = ' ' + input().rstrip()
 dp = [[0] * len(string_b) for _ in range(len(string_a))]
 
 for i in range(1, len(string_a)):
