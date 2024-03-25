@@ -1,5 +1,4 @@
 
-
 n,k=int(input()).split()
 arr = [ i for i in range(1,n+1)]
 
