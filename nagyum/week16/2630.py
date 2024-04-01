@@ -10,13 +10,14 @@ white=0
 def solution(x,y,n):
     global blue, white
     color=p[x][y]
+    d=n//2
     for i in range(x,x+n):
         for j in range(y,y+n):
             if color != p[i][j]:
-                solution(x,y,n//2)
-                solution(x,y+n//2,n//2)
-                solution(x+n//2,y,n//2)
-                solution(x+n//2,y+n//2,n//2)
+                solution(x,y,d)
+                solution(x,y+d,d)
+                solution(x+d,y,d)
+                solution(x+d,y+d,d)
                 return
     if color==0:
         white += 1
